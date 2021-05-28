@@ -1,4 +1,4 @@
 const Home = () => {
-  return <div>HOME</div>;
+  return <div className='container mx-auto'>HOME</div>;
 };
 export default Home;
