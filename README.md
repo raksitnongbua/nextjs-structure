@@ -1,1 +1,1 @@
-CIIZ
+NextJS Structure
