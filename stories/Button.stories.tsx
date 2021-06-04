@@ -1,37 +1,11 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
-
-import { Button, ButtonProps } from './Button';
+import { Button as ButtonComponent } from '../components/Button';
 
 export default {
-  title: 'Example/Button',
-  component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-} as Meta;
-
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: 'Button',
+  title: 'Components API/Components/Button',
+  component: ButtonComponent,
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+// This is the only named export in the file, and it matches the component name
+export const Button = (args) => {
+  return <ButtonComponent {...args} />;
 };
